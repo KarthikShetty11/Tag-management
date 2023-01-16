@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Link2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+
+<!-- 'set_consent':'exempt'-->
+<script>
+ var tc_vars = {'env_work':'test', 'env_language':'en','page_name':'home::link2','set_consent':'cnil.output','set_ati':'as2','url_parameter':''};
+</script>
+ 
+</head>
+
+
+
+<body>
+<!-- STANDARD BODY-TOP START //-->
+<!-- TAGCOMMANDER START //-->
+  <script type="text/javascript" src="tagCo.js"></script>
+  
+  <!-- type="text/javascript" src="////cdn.tagcommander.com/6349/tc_AXAGOPiano_12.js"></script>
+  <noscript><iframe src="//redirect6349.tagcommander.com/utils/noscript.php?id=12&amp;mode=iframe" width="1" height="1" rel="noindex,nofollow"></iframe></noscript>
+<!-- TAG COMMANDER END //-->
+<!-- STANDARD BODY-TOP END //-->
+
+
+<div class="w3-panel w3-blue">
+    <h3>Page Link2</h3>
+</div> 
+
+<div class="w3-bar w3-black">
+  <a href="index.html?xtor=AL-5-[internal]-[link2]-[E]-[F]-[G-home]&" class="w3-bar-item w3-button">Home</a>
+  <a href="link1.html?xtor=AL-5-[internal]-[link2]-[E]-[F]-[G-link1]&" class="w3-bar-item w3-button">Link 1</a>
+  <a href="link2.html" class="w3-bar-item w3-button">Link 2</a>
+</div>
+
+<div class="w3-container">
+ <p></p>	
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Case1</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Case2</button> 
+  </div>
+  
+  <div id="London" class="w3-container w3-border city">
+  <h2>Case1</h2>  <p>Info</p>
+  <p></p>	
+  </div>
+  <div id="Paris" class="w3-container w3-border city" style="display:none">
+  <h2>Case2</h2> <p>Info</p> 
+  <p></p>
+  </div>
+ 
+
+</div>  
+<div class="w3-panel w3-blue">
+ <p></p>
+ <button class="w3-btn w3-red"  onclick="window.history.back()">Go Back</button>
+ <button class="w3-btn w3-red"  onclick="window.history.forward()">Go Forward</button>
+ <button class="w3-btn w3-grey" onclick="window.close()">Close</button>
+ <p></p>
+</div> 
+<!-- Methods //-->	
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+<!-- Main JS //-->	
+
+</body>
+</html>
