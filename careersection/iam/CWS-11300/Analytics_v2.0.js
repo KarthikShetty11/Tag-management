@@ -4441,7 +4441,7 @@ function getAnalyticsGDPRStatus()
 
 /*URL Parameter Reader*/
 function gup(name, url) {
-    if (!url) url = location.href;
+    if (!url) url = decodeURIComponent(location.href);
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
     var regexS = "[\\?&]" + name + "=([^&#]*)";
     var regex = new RegExp(regexS);
