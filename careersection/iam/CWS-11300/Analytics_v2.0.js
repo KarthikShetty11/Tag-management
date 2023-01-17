@@ -4429,7 +4429,8 @@ function eraseCookie(name) {
     createCookie(name, "", -1);
 }
 /*MAAH 20221019 Warning: Verify if this is the right way to get the consent status*/
-if (gup('rh-analytic-consent')!=='')  createCookie('rh-analytic-consent',gup('rh-analytic-consent'),30);
+if (
+	('rh-analytic-consent')!=='')  createCookie('rh-analytic-consent',gup('rh-analytic-consent'),30);
 
 function getAnalyticsGDPRStatus()
  {
@@ -4440,7 +4441,7 @@ function getAnalyticsGDPRStatus()
 
 /*URL Parameter Reader*/
 function gup(name, url) {
-    if (!url) url = decodeURIComponent(location.href);
+    if (!url) url = location.href;
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
     var regexS = "[\\?&]" + name + "=([^&#]*)";
     var regex = new RegExp(regexS);
