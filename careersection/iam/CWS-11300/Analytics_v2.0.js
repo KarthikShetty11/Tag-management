@@ -2665,7 +2665,7 @@
                         c.setProperties(b);
                         p = c.format()
                     } else p =
-                        a.utils.getQueryStringValue("xtor", b);
+                        a.utils.getQueryStringValue("xtor", decodeURIComponent(b));
                     n = a.utils.getQueryStringValue("xtdt", b);
                     q = a.utils.getQueryStringValue("xts", b)
                 })();
